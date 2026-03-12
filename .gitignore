@@ -1,0 +1,120 @@
+# ====================================
+# 通用规则
+# ====================================
+.idea/
+node_modules/
+dist/
+build/
+*.log
+*.tmp
+*.temp
+.env
+.env.local
+.env.*.local
+*.pid
+*.seed
+*.pid.lock
+
+# ====================================
+# 38e628b 新增的不必要文件（仅保留核心功能）
+# ====================================
+.claude/exploration-context.json
+.claude/hooks/python3.sh
+.claude/hooks/session-start-wrapper.sh
+.claude/settings.json
+.claude/welcome-shown.txt
+
+# Skills - 备份目录
+**/scripts.backup*/
+**/mycc.backup**
+
+# ====================================
+# MyCC 运行时文件（不应提交）
+# ====================================
+.claude/skills/mycc/current.json
+.claude/skills/mycc/*.log
+.claude/skills/mycc/scripts/*.log
+.claude/skills/mycc/scripts/dist/
+.claude/skills/mycc/scripts/node_modules/
+.claude/skills/mycc/scripts/debug-table.mjs
+.claude/skills/mycc/scripts/test-table.mjs
+# tests 已纳入版本控制（开源仓需要）
+.claude/skills/mycc/start_backend_temp.bat
+.claude/skills/mycc/start_hidden_temp.vbs
+
+# ====================================
+# 系统配置和状态文件（本地使用）
+# ====================================
+.claude/settings.local.json
+0-System/about-me/
+0-System/context.md
+0-System/status.md
+1-Inbox/*.md
+.claude/skills/scheduler/history.md
+.claude/skills/backend_run.log
+.claude/skills/*/backend*.log
+
+# ====================================
+# 其他临时文件
+# ====================================
+nul
+test-tables.json
+test_table.txt
+
+# ====================================
+# Skills - 其他（非核心）
+# ====================================
+.claude/skills/agent-browser/
+.claude/skills/ieee-search/
+.claude/skills/obsidian-api/
+.claude/skills/memory-system/
+.claude/skills/scheduler/tasks.md
+.claude/skills/scheduler/test-task-log.md
+.claude/skills/tell-me/README-PATCH.md
+.claude/skills/tell-me/config.json
+.claude/skills/tell-me/local-changes.patch
+
+# 系统文件
+0-System/tasks/daily-status.md
+0-System/tasks/weekly-archive.md
+0-System/welcome.md
+1-Inbox/隐先变量清单.md
+3-Thinking/agent-knowledge-delivery.md
+3-Thinking/agentwise-claim-verification.md
+3-Thinking/agentwise-core-mechanisms-summary.md
+3-Thinking/agentwise-requirements-system.md
+3-Thinking/agentwise-research-agent.md
+3-Thinking/agentwise-self-improvement-mechanism.md
+3-Thinking/ai-products-research.md
+3-Thinking/feishu-integration-architecture-assessment.md
+3-Thinking/feishu-long-connection-research.md
+
+# 测试和临时脚本
+add-git-to-path.ps1
+enable-sandbox.ps1
+fix-cmd-bash-path.ps1
+fix-cmd-call.ps1
+fix-cmd-hooks.ps1
+fix-cmd-path.ps1
+fix-cmd-stdin.ps1
+start-all.ps1
+start-feishu.ps1
+test-agent-browser.ps1
+test-backtick.txt
+test-daemon.ps1
+test-daemon2.ps1
+test-fallback.ps1
+test-hooks.cmd
+test-nodejs.ps1
+update-cmd-gitbash.ps1
+
+# ====================================
+# Collect Skill 运行时文件
+# ====================================
+.claude/skills/collect/.fxb-token
+1-Inbox/_collect/
+
+# 其他
+ieee.png
+ieee_results.html
+package-lock.json

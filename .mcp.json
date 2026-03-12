@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "memos-api-mcp": {
+      "command": "npx",
+      "args": ["-y", "@upritam/memos-api-mcp@latest"],
+      "env": {
+        "MEMOS_API_URL": "http://localhost:5230",
+        "MEMOS_TOKEN": "eyJhbGciOiJIUzI1NiIsImtpZCI6InYxIiwidHlwIjoiSldUIn0.eyJuYW1lIjoicm9vdCIsImlzcyI6Im1lbW9zIiwic3ViIjoiMSIsImF1ZCI6WyJ1c2VyLmFjY2Vzcy50b2tlbiJdLCJleHAiOjQ4NDI5MjQ3NzUsImlhdCI6MTczOTUyNDc3NX0.-yyl1p9oB16KqR5jGH3_6xF0s9MKy-Wu8Q0yBxtYzGA"
+      }
+    },
+    "claude-mem": {
+      "command": "npx",
+      "args": ["-y", "@kazuph/mcp-claude-memory@latest"]
+    },
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp@latest"]
+    },
+    "brave-search": {
+      "command": "npx",
+      "args": ["-y", "@kaliaboi/mcp-brave-search@latest"],
+      "env": {
+        "BRAVE_API_KEY": "BSAjHRgJnwasqZ8Eymv5xG8uWyN8QFG"
+      }
+    }
+  }
+}

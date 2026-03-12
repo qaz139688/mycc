@@ -1,0 +1,16 @@
+{
+  "env": {
+    "ANTHROPIC_AUTH_TOKEN": "PROXY_MANAGED",
+    "ANTHROPIC_BASE_URL": "http://127.0.0.1:15721"
+  },
+  "enabledPlugins": {
+    "superpowers@claude-plugins-official": true,
+    "claude-mem@thedotmack": true,
+    "claude-hud@claude-hud": true,
+    "context7@claude-plugins-official": true
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "powershell -NoProfile -Command \"$p=(Get-ChildItem \"\"$env:USERPROFILE\\.claude\\plugins\\cache\\claude-hud\\claude-hud\"\" | Sort-Object LastWriteTime -Descending | Select-Object -First 1).FullName; if ($p) { & node (Join-Path $p 'dist\\index.js') }\""
+  }
+}
